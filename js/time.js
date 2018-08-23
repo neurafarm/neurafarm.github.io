@@ -26,7 +26,7 @@ function srvTime(){
     return xmlHttp.getResponseHeader("Date");
 }
 function getTimeRemaining(endtime) {
-    var t = Date.parse(endtime) - Date.parse(new Date());
+    var t = Date.parse(endtime) - Date.parse(new Date()) + dif;
     var seconds = Math.floor((t / 1000) % 60);
     var minutes = Math.floor((t / 1000 / 60) % 60);
     var hours = Math.floor((t / (1000 * 60 * 60)) % 24);
@@ -63,7 +63,14 @@ function getTimeRemaining(endtime) {
     updateClock();
     var timeinterval = setInterval(updateClock, 1000);
   }  
+
+  function diffTime(){
+      var d = Date.parse(new Date()) - Date.parse(dateSrv);
+      return d;
+  }
+
 var s = srvTime();
-var date = new Date(s);
-var deadline = new Date('September 1 , 2018 07:00:00');
+var dateSrv = new Date(s);  
+var dif = diffTime();
+var deadline = new Date('September 1 , 2018 00:01:00');
 initializeClock('clockdiv', deadline);

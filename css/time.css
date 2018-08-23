@@ -1,5 +1,11 @@
+#countdown {
+	background: #343a40;
+	color: #fff;
+	position: relative;
+  }
+
 /* ==========================================================================
-16. Clockdiv
+Clockdiv
  ========================================================================== */
  #clockdiv{
 	font-family: sans-serif;
@@ -13,18 +19,19 @@
 #clockdiv > div{
 	padding: 10px;
 	border-radius: 3px;
-	background: #00BF96;
+	background: #75B34A;
 	display: inline-block;
 }
 
 #clockdiv div > span{
 	padding: 15px;
 	border-radius: 3px;
-	background: #00816A;
+	background: #4E7532; 
 	display: inline-block;
 }
 
 .smalltext{
+	font-family: 'Poppins', sans-serif;
 	padding-top: 5px;
 	font-size: 16px;
 }
