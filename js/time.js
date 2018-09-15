@@ -72,5 +72,5 @@ function getTimeRemaining(endtime) {
 var s = srvTime();
 var dateSrv = new Date(s);  
 var dif = diffTime();
-var deadline = new Date('September 16 , 2018 00:01:00');
+var deadline = new Date('September 18 , 2018 00:01:00');
 initializeClock('clockdiv', deadline);
